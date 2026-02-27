@@ -91,3 +91,18 @@
 ## Wireless networks everywhere
   - Wireless networking is pervasive
     - you probably don't just have a single access point
+  - Your access points may not even be in the same building
+    - One or more at every remote site
+  - Configurations may change at any moment
+    - Access policy, security policies, AP configs
+  - The network should be invisible to your users
+    - Seamless network access, regardless of role
+## Wireless LAN controllers
+  - Centralized management of access points
+    - A single "pane of glass"
+  - Deploy new access points
+  - Performance and security monitoring
+  - Configure and deploy changes to all sites
+  - Report on access point use
+  - Usually a proprietary system
+    - The wireless controller is paired with the access points
