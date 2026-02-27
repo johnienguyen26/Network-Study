@@ -1,4 +1,4 @@
-# Networking Devices
+# Networking Devices 1.2a
   - Many different ways to forward traffic
     - A data center full of equipment
   - Every device have a purpose
