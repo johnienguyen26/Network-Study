@@ -49,4 +49,34 @@
   - Many different uses
     - Drop a packet caught in a loop
     - Clear a cache
+## Routing loops
+  - Router A thinks the next hop is to Router B
+    - Router bB thinks the next hop is to router A
+    - Repeat
+  - Easy to misconfigure
+    - Especially with static routing
+  - This can't go on forever
+    - TTL is used to stop the loop
+  
+<img src="images/tracert.png" width="350" align="center">
+<img src="images/routing loop.png" width="900" align="center">
 
+## IP (Internet Protocol)
+  - Loops could cause a packet to live forever
+    - Drop the packet after a certain number of hops
+  - Each pass through a router is a hop
+    - Default TTL for macOS/Linux is 64 hops
+    - Default TTL for Windows is 128 hops
+  - The routher decreaed TTL by 1
+    - A TTL of zero is dropped by the router
+
+<img src="images/packet.png" width="600" align="center">
+
+## DNS (Domain Name System)
+  - DNS lookups
+    - Resolve an IP address from a fully-qualified domain name
+    - EX: www.professormesser.com IP = 172.67.41.114
+  - A device caches the lookup for a certain amount of time 
+    - How long? - TTL seconds long.
+
+<img src="images/DNS.png" width="600" align="center">
